@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Petits Cailloux",
+  "description": "Petits Cailloux",
+  "version": "1.0",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+
+  "content_scripts":[
+    {
+      "matches": ["http://www.seloger.com/*"],
+      "js": ["jquery-1.7.2.min.js","caillasse.js"]
+    }
+  ]
+}
